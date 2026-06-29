@@ -8,7 +8,7 @@ fs.readFile("tasks.json", "utf8", (err, data) => {
         return;
     }
     const tasks = JSON.parse(data);
-    console.log("Your Tasks:");
+    console.log("Your Tasks:"); 
     tasks.forEach((task, index) => {
         console.log(`${index + 1}. ${task}`);
     });
